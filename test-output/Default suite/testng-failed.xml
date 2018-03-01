@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="TestCases.Reverse_PO_Page_Test">
+        <methods>
+          <include name="setExtent"/>
+          <include name="setup"/>
+          <include name="To_Verify_Create_RPO_With_Closed_Status" invocation-numbers="0"/>
+          <include name="endReport"/>
+          <include name="Closebrowser"/>
+        </methods>
+      </class> <!-- TestCases.Reverse_PO_Page_Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

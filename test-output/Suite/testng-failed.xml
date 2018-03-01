@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Analyzer.MyTransformer"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="TestCases.Product_Page_Test_For_Reverse_PO_Product">
+        <methods>
+          <include name="To_verify_Part_stock_Logs"/>
+          <include name="endReport"/>
+          <include name="setExtent"/>
+          <include name="setup"/>
+          <include name="down"/>
+        </methods>
+      </class> <!-- TestCases.Product_Page_Test_For_Reverse_PO_Product -->
+      <class name="TestCases.Reverse_PO_Page_Test">
+        <methods>
+          <include name="setExtent"/>
+          <include name="setup"/>
+          <include name="endReport"/>
+          <include name="Closebrowser"/>
+          <include name="To_Verify_Create_RPO_with_Partial_Status" invocation-numbers="0 0 0"/>
+        </methods>
+      </class> <!-- TestCases.Reverse_PO_Page_Test -->
+      <class name="TestCases.Manage_Purchase_Orders_Test">
+        <methods>
+          <include name="setup"/>
+          <include name="down"/>
+          <include name="To_Verify_PO_Partial_Status_AND_LOGs"/>
+        </methods>
+      </class> <!-- TestCases.Manage_Purchase_Orders_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

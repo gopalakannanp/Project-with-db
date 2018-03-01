@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+ <listeners>
+        <listener class-name="Analyzer.MyTransformer"/>
+  </listeners>
+  
+	<test thread-count="5" name="Test" preserve-order="true">
+		<classes>
+
+			<class name="TestCases.Reverse_PO_Page_Test">
+				<methods>
+					<include name="To_Verify_Create_RPO_With_Closed_Status" />
+				</methods>
+			</class>
+			
+			<class name="TestCases.Manage_Purchase_Orders_Test">
+				<methods>
+					<include name="To_Verify_PO_Closed_Status_AND_LOGs" />
+				</methods>
+			</class>
+			
+			<class name="TestCases.Product_Page_Test_For_Reverse_PO_Product">
+				<methods>
+					<include name="To_verify_Part_stock_Logs" />
+				</methods>
+			</class>
+			
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
